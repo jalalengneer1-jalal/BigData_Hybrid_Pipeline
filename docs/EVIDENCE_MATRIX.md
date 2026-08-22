@@ -33,4 +33,4 @@
 | Spark UI screenshots | reports/screenshots | ATTACH |
 | MongoDB Compass screenshots | reports/screenshots | ATTACH |
 | Git repository | Local Git repository initialized on `main` with final project commit | PASS |
-| GitHub URL | https://github.com/RAIDAN44/BigData_Hybrid_Pipeline | PASS |
+| GitHub URL | https://github.com/jalalengneer1-jalal/BigData_Hybrid_Pipeline | PASS |

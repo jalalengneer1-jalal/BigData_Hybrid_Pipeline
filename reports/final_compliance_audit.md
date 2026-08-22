@@ -26,6 +26,6 @@ Scope: official individual core requirements.
 | 11 — Submission files and screenshot evidence | PASS | Core deliverables=True; screenshots=15. |
 | 13 — Major deduction / rejection guards | PASS | No Pandas full-load/list(reader); Batch insert_many and validated Upsert markers present. |
 | GIT — Local Git repository | PASS | Local .git repository exists. |
-| GITHUB — GitHub remote URL | PASS | origin	https://github.com/RAIDAN44/BigData_Hybrid_Pipeline.git (fetch)
-origin	https://github.com/RAIDAN44/BigData_Hybrid_Pipeline.git (push) |
+| GITHUB — GitHub remote URL | PASS | origin	https://github.com/jalalengneer1-jalal/BigData_Hybrid_Pipeline.git (fetch)
+origin	https://github.com/jalalengneer1-jalal/BigData_Hybrid_Pipeline.git (push) |
 | SAFETY — No large CSV tracked in Git | PASS | No CSV files tracked. |

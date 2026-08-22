@@ -114,7 +114,7 @@
       "requirement": "GITHUB",
       "title": "GitHub remote URL",
       "status": "PASS",
-      "detail": "origin\thttps://github.com/RAIDAN44/BigData_Hybrid_Pipeline.git (fetch)\norigin\thttps://github.com/RAIDAN44/BigData_Hybrid_Pipeline.git (push)"
+      "detail": "origin\thttps://github.com/jalalengneer1-jalal/BigData_Hybrid_Pipeline.git (fetch)\norigin\thttps://github.com/jalalengneer1-jalal/BigData_Hybrid_Pipeline.git (push)"
     },
     {
       "requirement": "SAFETY",
