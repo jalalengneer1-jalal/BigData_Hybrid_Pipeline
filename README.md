@@ -6,6 +6,49 @@ University Big Data Midterm Project
 
 Hybrid Raw-first ELT pipeline for dirty e-commerce orders using Python Batch, Apache PySpark, MongoDB, and MongoDB Spark Connector.
 
+## Prerequisites and Setup
+
+- Python 3.10
+- Java 17 for the PySpark path
+- MongoDB running locally, or a reachable MongoDB URI
+
+Create and activate a Python environment, then install the pinned dependencies:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+The tested Windows Spark setup uses Java 17. Set `JAVA_HOME` to the Java 17
+installation (or make `java` available on `PATH`). A Conda Java runtime under
+`Library\bin\java.exe` is also detected automatically. The Python Batch path does
+not require Java. Start MongoDB before a real load; the defaults are:
+
+```text
+MONGO_URI=mongodb://127.0.0.1:27017
+MONGO_DATABASE=bigdata_midterm
+```
+
+Optional environment overrides are `MONGO_URI`, `MONGO_DATABASE`,
+`SMALL_FILE_THRESHOLD_MB`, `BATCH_SIZE`, and `SPARK_MASTER`.
+
+The large source CSV is intentionally excluded from Git. Put the instructor's
+unchanged file anywhere accessible and pass its full path to `--input`.
+
+Create the required reproducible small sample without editing the source file:
+
+```powershell
+python -m src.create_small_sample --input "<LARGE_CSV_PATH>" --rows 100000 --output ".\data\samples\orders_small_sample.csv"
+```
+
+Verify the installation before the practical demo:
+
+```powershell
+python -m pytest tests -q
+```
+
 ## Architecture
 
 Dirty CSV -> File Router -> Python Batch (small) / PySpark (large) -> orders_raw -> Cleaning & Validation -> Valid / Corrected / Quarantined -> orders_validated / orders_quarantine -> Metrics

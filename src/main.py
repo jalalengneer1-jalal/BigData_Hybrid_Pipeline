@@ -1,5 +1,6 @@
 import argparse
 import os
+import shutil
 import subprocess
 import sys
 import uuid
@@ -168,21 +169,37 @@ def build_spark_environment():
         sys.prefix
     )
 
-    java_home = (
-        env_prefix
-        / "Library"
+    configured_java_home = env.get("JAVA_HOME")
+    conda_java_home = env_prefix / "Library"
+    windows_java_17_home = Path(
+        r"C:\Program Files\Java\jdk-17"
     )
 
-    java_exe = (
-        java_home
-        / "bin"
-        / "java.exe"
-    )
+    if configured_java_home:
+        java_home = Path(configured_java_home).expanduser().resolve()
+    elif (conda_java_home / "bin" / "java.exe").exists():
+        java_home = conda_java_home
+    elif (
+        os.name == "nt"
+        and (windows_java_17_home / "bin" / "java.exe").exists()
+    ):
+        java_home = windows_java_17_home
+    else:
+        java_on_path = shutil.which("java")
+
+        if not java_on_path:
+            raise RuntimeError(
+                "Java 17 was not found. Set JAVA_HOME or add java to PATH."
+            )
+
+        java_home = Path(java_on_path).resolve().parent.parent
+
+    java_exe = java_home / "bin" / "java.exe"
 
     if not java_exe.exists():
         raise RuntimeError(
-            "Project Java 17 was not found at "
-            f"{java_exe}"
+            "JAVA_HOME does not contain bin\\java.exe: "
+            f"{java_home}"
         )
 
     import pyspark
