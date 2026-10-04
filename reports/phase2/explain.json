@@ -1,0 +1,906 @@
+{
+  "generated_at": "2026-10-04T21:54:42.381958+00:00",
+  "baseline": "Forced natural collection scan; existing indexes are preserved. After uses named compound index.",
+  "comparisons": [
+    {
+      "name": "customer_orders",
+      "index": "p2_customer_date",
+      "value": "عميل-0",
+      "before": {
+        "explainVersion": "1",
+        "queryPlanner": {
+          "namespace": "bigdata_midterm.orders_validated",
+          "parsedQuery": {
+            "customer_id": {
+              "$eq": "عميل-0"
+            }
+          },
+          "indexFilterSet": false,
+          "queryHash": "4777B628",
+          "planCacheShapeHash": "4777B628",
+          "planCacheKey": "C917E970",
+          "optimizationTimeMillis": 0,
+          "maxIndexedOrSolutionsReached": false,
+          "maxIndexedAndSolutionsReached": false,
+          "maxScansToExplodeReached": false,
+          "prunedSimilarIndexes": false,
+          "winningPlan": {
+            "isCached": false,
+            "stage": "SORT",
+            "sortPattern": {
+              "order_date": 1
+            },
+            "memLimit": 104857600,
+            "limitAmount": 100,
+            "type": "simple",
+            "inputStage": {
+              "stage": "COLLSCAN",
+              "filter": {
+                "customer_id": {
+                  "$eq": "عميل-0"
+                }
+              },
+              "nss": "bigdata_midterm.orders_validated",
+              "direction": "forward"
+            }
+          },
+          "rejectedPlans": []
+        },
+        "executionStats": {
+          "executionSuccess": true,
+          "nReturned": 1,
+          "executionTimeMillis": 306,
+          "totalKeysExamined": 0,
+          "totalDocsExamined": 91699,
+          "executionStages": {
+            "isCached": false,
+            "stage": "SORT",
+            "nReturned": 1,
+            "executionTimeMillisEstimate": 262,
+            "works": 91702,
+            "advanced": 1,
+            "needTime": 91700,
+            "needYield": 0,
+            "saveState": 17,
+            "restoreState": 17,
+            "isEOF": 1,
+            "sortPattern": {
+              "order_date": 1
+            },
+            "memLimit": 104857600,
+            "limitAmount": 100,
+            "type": "simple",
+            "totalDataSizeSorted": 1493,
+            "usedDisk": false,
+            "spills": 0,
+            "spilledRecords": 0,
+            "spilledBytes": 0,
+            "spilledDataStorageSize": 0,
+            "peakTrackedMemBytes": 1493,
+            "inputStage": {
+              "stage": "COLLSCAN",
+              "filter": {
+                "customer_id": {
+                  "$eq": "عميل-0"
+                }
+              },
+              "nReturned": 1,
+              "executionTimeMillisEstimate": 227,
+              "works": 91700,
+              "advanced": 1,
+              "needTime": 91698,
+              "needYield": 0,
+              "saveState": 17,
+              "restoreState": 17,
+              "isEOF": 1,
+              "nss": "bigdata_midterm.orders_validated",
+              "direction": "forward",
+              "docsExamined": 91699
+            }
+          }
+        },
+        "queryShapeHash": "38B8EC13AC183919A4995AA9079222184639E01DEDD7753A2A5300525270A72A",
+        "command": {
+          "find": "orders_validated",
+          "filter": {
+            "customer_id": "عميل-0"
+          },
+          "sort": {
+            "order_date": 1
+          },
+          "limit": 100,
+          "hint": {
+            "$natural": 1
+          },
+          "$db": "bigdata_midterm"
+        },
+        "serverInfo": {
+          "host": "DESKTOP-81FETUO",
+          "port": 27017,
+          "version": "8.3.8",
+          "gitVersion": "35e8c8a57f78157ed9fac1a9e90ee6c1818adab6"
+        },
+        "serverParameters": {
+          "internalQueryFacetBufferSizeBytes": 104857600,
+          "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+          "internalQueryMaxBlockingSortMemoryUsageBytes": 104857600,
+          "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+          "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+          "internalLookupStageIntermediateDocumentMaxSizeBytes": 104857600,
+          "internalQueryProhibitBlockingMergeOnMongoS": 0,
+          "internalQueryMaxAddToSetBytes": 104857600,
+          "internalQueryFrameworkControl": "trySbeRestricted",
+          "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+        },
+        "ok": 1.0
+      },
+      "after": {
+        "explainVersion": "1",
+        "queryPlanner": {
+          "namespace": "bigdata_midterm.orders_validated",
+          "parsedQuery": {
+            "customer_id": {
+              "$eq": "عميل-0"
+            }
+          },
+          "indexFilterSet": false,
+          "queryHash": "4777B628",
+          "planCacheShapeHash": "4777B628",
+          "planCacheKey": "C917E970",
+          "optimizationTimeMillis": 0,
+          "maxIndexedOrSolutionsReached": false,
+          "maxIndexedAndSolutionsReached": false,
+          "maxScansToExplodeReached": false,
+          "prunedSimilarIndexes": false,
+          "winningPlan": {
+            "isCached": false,
+            "stage": "LIMIT",
+            "limitAmount": 100,
+            "inputStage": {
+              "stage": "FETCH",
+              "nss": "bigdata_midterm.orders_validated",
+              "inputStage": {
+                "stage": "IXSCAN",
+                "nss": "bigdata_midterm.orders_validated",
+                "keyPattern": {
+                  "customer_id": 1,
+                  "order_date": 1
+                },
+                "indexName": "p2_customer_date",
+                "isMultiKey": false,
+                "multiKeyPaths": {
+                  "customer_id": [],
+                  "order_date": []
+                },
+                "isUnique": false,
+                "isSparse": false,
+                "isPartial": false,
+                "indexVersion": 2,
+                "direction": "forward",
+                "indexBounds": {
+                  "customer_id": [
+                    "[\"عميل-0\", \"عميل-0\"]"
+                  ],
+                  "order_date": [
+                    "[MinKey, MaxKey]"
+                  ]
+                }
+              }
+            }
+          },
+          "rejectedPlans": []
+        },
+        "executionStats": {
+          "executionSuccess": true,
+          "nReturned": 1,
+          "executionTimeMillis": 36,
+          "totalKeysExamined": 1,
+          "totalDocsExamined": 1,
+          "executionStages": {
+            "isCached": false,
+            "stage": "LIMIT",
+            "nReturned": 1,
+            "executionTimeMillisEstimate": 36,
+            "works": 2,
+            "advanced": 1,
+            "needTime": 0,
+            "needYield": 0,
+            "saveState": 1,
+            "restoreState": 1,
+            "isEOF": 1,
+            "limitAmount": 100,
+            "inputStage": {
+              "stage": "FETCH",
+              "nReturned": 1,
+              "executionTimeMillisEstimate": 36,
+              "works": 2,
+              "advanced": 1,
+              "needTime": 0,
+              "needYield": 0,
+              "saveState": 1,
+              "restoreState": 1,
+              "isEOF": 1,
+              "nss": "bigdata_midterm.orders_validated",
+              "docsExamined": 1,
+              "alreadyHasObj": 0,
+              "inputStage": {
+                "stage": "IXSCAN",
+                "nReturned": 1,
+                "executionTimeMillisEstimate": 36,
+                "works": 2,
+                "advanced": 1,
+                "needTime": 0,
+                "needYield": 0,
+                "saveState": 1,
+                "restoreState": 1,
+                "isEOF": 1,
+                "nss": "bigdata_midterm.orders_validated",
+                "keyPattern": {
+                  "customer_id": 1,
+                  "order_date": 1
+                },
+                "indexName": "p2_customer_date",
+                "isMultiKey": false,
+                "multiKeyPaths": {
+                  "customer_id": [],
+                  "order_date": []
+                },
+                "isUnique": false,
+                "isSparse": false,
+                "isPartial": false,
+                "indexVersion": 2,
+                "direction": "forward",
+                "indexBounds": {
+                  "customer_id": [
+                    "[\"عميل-0\", \"عميل-0\"]"
+                  ],
+                  "order_date": [
+                    "[MinKey, MaxKey]"
+                  ]
+                },
+                "keysExamined": 1,
+                "seeks": 1,
+                "dupsTested": 0,
+                "dupsDropped": 0,
+                "peakTrackedMemBytes": 0
+              }
+            }
+          }
+        },
+        "queryShapeHash": "38B8EC13AC183919A4995AA9079222184639E01DEDD7753A2A5300525270A72A",
+        "command": {
+          "find": "orders_validated",
+          "filter": {
+            "customer_id": "عميل-0"
+          },
+          "sort": {
+            "order_date": 1
+          },
+          "limit": 100,
+          "hint": "p2_customer_date",
+          "$db": "bigdata_midterm"
+        },
+        "serverInfo": {
+          "host": "DESKTOP-81FETUO",
+          "port": 27017,
+          "version": "8.3.8",
+          "gitVersion": "35e8c8a57f78157ed9fac1a9e90ee6c1818adab6"
+        },
+        "serverParameters": {
+          "internalQueryFacetBufferSizeBytes": 104857600,
+          "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+          "internalQueryMaxBlockingSortMemoryUsageBytes": 104857600,
+          "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+          "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+          "internalLookupStageIntermediateDocumentMaxSizeBytes": 104857600,
+          "internalQueryProhibitBlockingMergeOnMongoS": 0,
+          "internalQueryMaxAddToSetBytes": 104857600,
+          "internalQueryFrameworkControl": "trySbeRestricted",
+          "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+        },
+        "ok": 1.0
+      },
+      "reason": "Customer equality followed by date range/sort"
+    },
+    {
+      "name": "city_orders",
+      "index": "p2_city_date",
+      "value": "تعز",
+      "before": {
+        "explainVersion": "1",
+        "queryPlanner": {
+          "namespace": "bigdata_midterm.orders_validated",
+          "parsedQuery": {
+            "city": {
+              "$eq": "تعز"
+            }
+          },
+          "indexFilterSet": false,
+          "queryHash": "AEAF7FB3",
+          "planCacheShapeHash": "AEAF7FB3",
+          "planCacheKey": "2F327ED5",
+          "optimizationTimeMillis": 0,
+          "maxIndexedOrSolutionsReached": false,
+          "maxIndexedAndSolutionsReached": false,
+          "maxScansToExplodeReached": false,
+          "prunedSimilarIndexes": false,
+          "winningPlan": {
+            "isCached": false,
+            "stage": "SORT",
+            "sortPattern": {
+              "order_date": 1
+            },
+            "memLimit": 104857600,
+            "limitAmount": 100,
+            "type": "simple",
+            "inputStage": {
+              "stage": "COLLSCAN",
+              "filter": {
+                "city": {
+                  "$eq": "تعز"
+                }
+              },
+              "nss": "bigdata_midterm.orders_validated",
+              "direction": "forward"
+            }
+          },
+          "rejectedPlans": []
+        },
+        "executionStats": {
+          "executionSuccess": true,
+          "nReturned": 100,
+          "executionTimeMillis": 351,
+          "totalKeysExamined": 0,
+          "totalDocsExamined": 91699,
+          "executionStages": {
+            "isCached": false,
+            "stage": "SORT",
+            "nReturned": 100,
+            "executionTimeMillisEstimate": 331,
+            "works": 91801,
+            "advanced": 100,
+            "needTime": 91700,
+            "needYield": 0,
+            "saveState": 22,
+            "restoreState": 22,
+            "isEOF": 1,
+            "sortPattern": {
+              "order_date": 1
+            },
+            "memLimit": 104857600,
+            "limitAmount": 100,
+            "type": "simple",
+            "totalDataSizeSorted": 133132,
+            "usedDisk": false,
+            "spills": 0,
+            "spilledRecords": 0,
+            "spilledBytes": 0,
+            "spilledDataStorageSize": 0,
+            "peakTrackedMemBytes": 135710,
+            "inputStage": {
+              "stage": "COLLSCAN",
+              "filter": {
+                "city": {
+                  "$eq": "تعز"
+                }
+              },
+              "nReturned": 9202,
+              "executionTimeMillisEstimate": 277,
+              "works": 91700,
+              "advanced": 9202,
+              "needTime": 82497,
+              "needYield": 0,
+              "saveState": 22,
+              "restoreState": 22,
+              "isEOF": 1,
+              "nss": "bigdata_midterm.orders_validated",
+              "direction": "forward",
+              "docsExamined": 91699
+            }
+          }
+        },
+        "queryShapeHash": "2ACDAB55AF5FBF1DB4E535BDBF3AEF0F5A786A640D836BA63A1DBF92D5E0ADAC",
+        "command": {
+          "find": "orders_validated",
+          "filter": {
+            "city": "تعز"
+          },
+          "sort": {
+            "order_date": 1
+          },
+          "limit": 100,
+          "hint": {
+            "$natural": 1
+          },
+          "$db": "bigdata_midterm"
+        },
+        "serverInfo": {
+          "host": "DESKTOP-81FETUO",
+          "port": 27017,
+          "version": "8.3.8",
+          "gitVersion": "35e8c8a57f78157ed9fac1a9e90ee6c1818adab6"
+        },
+        "serverParameters": {
+          "internalQueryFacetBufferSizeBytes": 104857600,
+          "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+          "internalQueryMaxBlockingSortMemoryUsageBytes": 104857600,
+          "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+          "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+          "internalLookupStageIntermediateDocumentMaxSizeBytes": 104857600,
+          "internalQueryProhibitBlockingMergeOnMongoS": 0,
+          "internalQueryMaxAddToSetBytes": 104857600,
+          "internalQueryFrameworkControl": "trySbeRestricted",
+          "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+        },
+        "ok": 1.0
+      },
+      "after": {
+        "explainVersion": "1",
+        "queryPlanner": {
+          "namespace": "bigdata_midterm.orders_validated",
+          "parsedQuery": {
+            "city": {
+              "$eq": "تعز"
+            }
+          },
+          "indexFilterSet": false,
+          "queryHash": "AEAF7FB3",
+          "planCacheShapeHash": "AEAF7FB3",
+          "planCacheKey": "2F327ED5",
+          "optimizationTimeMillis": 0,
+          "maxIndexedOrSolutionsReached": false,
+          "maxIndexedAndSolutionsReached": false,
+          "maxScansToExplodeReached": false,
+          "prunedSimilarIndexes": false,
+          "winningPlan": {
+            "isCached": false,
+            "stage": "LIMIT",
+            "limitAmount": 100,
+            "inputStage": {
+              "stage": "FETCH",
+              "nss": "bigdata_midterm.orders_validated",
+              "inputStage": {
+                "stage": "IXSCAN",
+                "nss": "bigdata_midterm.orders_validated",
+                "keyPattern": {
+                  "city": 1,
+                  "order_date": 1
+                },
+                "indexName": "p2_city_date",
+                "isMultiKey": false,
+                "multiKeyPaths": {
+                  "city": [],
+                  "order_date": []
+                },
+                "isUnique": false,
+                "isSparse": false,
+                "isPartial": false,
+                "indexVersion": 2,
+                "direction": "forward",
+                "indexBounds": {
+                  "city": [
+                    "[\"تعز\", \"تعز\"]"
+                  ],
+                  "order_date": [
+                    "[MinKey, MaxKey]"
+                  ]
+                }
+              }
+            }
+          },
+          "rejectedPlans": []
+        },
+        "executionStats": {
+          "executionSuccess": true,
+          "nReturned": 100,
+          "executionTimeMillis": 42,
+          "totalKeysExamined": 100,
+          "totalDocsExamined": 100,
+          "executionStages": {
+            "isCached": false,
+            "stage": "LIMIT",
+            "nReturned": 100,
+            "executionTimeMillisEstimate": 41,
+            "works": 101,
+            "advanced": 100,
+            "needTime": 0,
+            "needYield": 0,
+            "saveState": 1,
+            "restoreState": 1,
+            "isEOF": 1,
+            "limitAmount": 100,
+            "inputStage": {
+              "stage": "FETCH",
+              "nReturned": 100,
+              "executionTimeMillisEstimate": 41,
+              "works": 100,
+              "advanced": 100,
+              "needTime": 0,
+              "needYield": 0,
+              "saveState": 1,
+              "restoreState": 1,
+              "isEOF": 0,
+              "nss": "bigdata_midterm.orders_validated",
+              "docsExamined": 100,
+              "alreadyHasObj": 0,
+              "inputStage": {
+                "stage": "IXSCAN",
+                "nReturned": 100,
+                "executionTimeMillisEstimate": 41,
+                "works": 100,
+                "advanced": 100,
+                "needTime": 0,
+                "needYield": 0,
+                "saveState": 1,
+                "restoreState": 1,
+                "isEOF": 0,
+                "nss": "bigdata_midterm.orders_validated",
+                "keyPattern": {
+                  "city": 1,
+                  "order_date": 1
+                },
+                "indexName": "p2_city_date",
+                "isMultiKey": false,
+                "multiKeyPaths": {
+                  "city": [],
+                  "order_date": []
+                },
+                "isUnique": false,
+                "isSparse": false,
+                "isPartial": false,
+                "indexVersion": 2,
+                "direction": "forward",
+                "indexBounds": {
+                  "city": [
+                    "[\"تعز\", \"تعز\"]"
+                  ],
+                  "order_date": [
+                    "[MinKey, MaxKey]"
+                  ]
+                },
+                "keysExamined": 100,
+                "seeks": 1,
+                "dupsTested": 0,
+                "dupsDropped": 0,
+                "peakTrackedMemBytes": 0
+              }
+            }
+          }
+        },
+        "queryShapeHash": "2ACDAB55AF5FBF1DB4E535BDBF3AEF0F5A786A640D836BA63A1DBF92D5E0ADAC",
+        "command": {
+          "find": "orders_validated",
+          "filter": {
+            "city": "تعز"
+          },
+          "sort": {
+            "order_date": 1
+          },
+          "limit": 100,
+          "hint": "p2_city_date",
+          "$db": "bigdata_midterm"
+        },
+        "serverInfo": {
+          "host": "DESKTOP-81FETUO",
+          "port": 27017,
+          "version": "8.3.8",
+          "gitVersion": "35e8c8a57f78157ed9fac1a9e90ee6c1818adab6"
+        },
+        "serverParameters": {
+          "internalQueryFacetBufferSizeBytes": 104857600,
+          "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+          "internalQueryMaxBlockingSortMemoryUsageBytes": 104857600,
+          "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+          "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+          "internalLookupStageIntermediateDocumentMaxSizeBytes": 104857600,
+          "internalQueryProhibitBlockingMergeOnMongoS": 0,
+          "internalQueryMaxAddToSetBytes": 104857600,
+          "internalQueryFrameworkControl": "trySbeRestricted",
+          "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+        },
+        "ok": 1.0
+      },
+      "reason": "City equality followed by date range/sort"
+    },
+    {
+      "name": "status_orders",
+      "index": "p2_status_date",
+      "value": "مؤكد",
+      "before": {
+        "explainVersion": "1",
+        "queryPlanner": {
+          "namespace": "bigdata_midterm.orders_validated",
+          "parsedQuery": {
+            "status": {
+              "$eq": "مؤكد"
+            }
+          },
+          "indexFilterSet": false,
+          "queryHash": "D39E4579",
+          "planCacheShapeHash": "D39E4579",
+          "planCacheKey": "8A23B76D",
+          "optimizationTimeMillis": 0,
+          "maxIndexedOrSolutionsReached": false,
+          "maxIndexedAndSolutionsReached": false,
+          "maxScansToExplodeReached": false,
+          "prunedSimilarIndexes": false,
+          "winningPlan": {
+            "isCached": false,
+            "stage": "SORT",
+            "sortPattern": {
+              "order_date": 1
+            },
+            "memLimit": 104857600,
+            "limitAmount": 100,
+            "type": "simple",
+            "inputStage": {
+              "stage": "COLLSCAN",
+              "filter": {
+                "status": {
+                  "$eq": "مؤكد"
+                }
+              },
+              "nss": "bigdata_midterm.orders_validated",
+              "direction": "forward"
+            }
+          },
+          "rejectedPlans": []
+        },
+        "executionStats": {
+          "executionSuccess": true,
+          "nReturned": 100,
+          "executionTimeMillis": 293,
+          "totalKeysExamined": 0,
+          "totalDocsExamined": 91699,
+          "executionStages": {
+            "isCached": false,
+            "stage": "SORT",
+            "nReturned": 100,
+            "executionTimeMillisEstimate": 269,
+            "works": 91801,
+            "advanced": 100,
+            "needTime": 91700,
+            "needYield": 0,
+            "saveState": 17,
+            "restoreState": 17,
+            "isEOF": 1,
+            "sortPattern": {
+              "order_date": 1
+            },
+            "memLimit": 104857600,
+            "limitAmount": 100,
+            "type": "simple",
+            "totalDataSizeSorted": 135617,
+            "usedDisk": false,
+            "spills": 0,
+            "spilledRecords": 0,
+            "spilledBytes": 0,
+            "spilledDataStorageSize": 0,
+            "peakTrackedMemBytes": 135747,
+            "inputStage": {
+              "stage": "COLLSCAN",
+              "filter": {
+                "status": {
+                  "$eq": "مؤكد"
+                }
+              },
+              "nReturned": 15322,
+              "executionTimeMillisEstimate": 196,
+              "works": 91700,
+              "advanced": 15322,
+              "needTime": 76377,
+              "needYield": 0,
+              "saveState": 17,
+              "restoreState": 17,
+              "isEOF": 1,
+              "nss": "bigdata_midterm.orders_validated",
+              "direction": "forward",
+              "docsExamined": 91699
+            }
+          }
+        },
+        "queryShapeHash": "CA7E817AB05545E1FAE4E9456706B845A00CD54A8D959A6F601D0D459020D778",
+        "command": {
+          "find": "orders_validated",
+          "filter": {
+            "status": "مؤكد"
+          },
+          "sort": {
+            "order_date": 1
+          },
+          "limit": 100,
+          "hint": {
+            "$natural": 1
+          },
+          "$db": "bigdata_midterm"
+        },
+        "serverInfo": {
+          "host": "DESKTOP-81FETUO",
+          "port": 27017,
+          "version": "8.3.8",
+          "gitVersion": "35e8c8a57f78157ed9fac1a9e90ee6c1818adab6"
+        },
+        "serverParameters": {
+          "internalQueryFacetBufferSizeBytes": 104857600,
+          "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+          "internalQueryMaxBlockingSortMemoryUsageBytes": 104857600,
+          "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+          "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+          "internalLookupStageIntermediateDocumentMaxSizeBytes": 104857600,
+          "internalQueryProhibitBlockingMergeOnMongoS": 0,
+          "internalQueryMaxAddToSetBytes": 104857600,
+          "internalQueryFrameworkControl": "trySbeRestricted",
+          "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+        },
+        "ok": 1.0
+      },
+      "after": {
+        "explainVersion": "1",
+        "queryPlanner": {
+          "namespace": "bigdata_midterm.orders_validated",
+          "parsedQuery": {
+            "status": {
+              "$eq": "مؤكد"
+            }
+          },
+          "indexFilterSet": false,
+          "queryHash": "D39E4579",
+          "planCacheShapeHash": "D39E4579",
+          "planCacheKey": "8A23B76D",
+          "optimizationTimeMillis": 0,
+          "maxIndexedOrSolutionsReached": false,
+          "maxIndexedAndSolutionsReached": false,
+          "maxScansToExplodeReached": false,
+          "prunedSimilarIndexes": false,
+          "winningPlan": {
+            "isCached": false,
+            "stage": "LIMIT",
+            "limitAmount": 100,
+            "inputStage": {
+              "stage": "FETCH",
+              "nss": "bigdata_midterm.orders_validated",
+              "inputStage": {
+                "stage": "IXSCAN",
+                "nss": "bigdata_midterm.orders_validated",
+                "keyPattern": {
+                  "status": 1,
+                  "order_date": 1
+                },
+                "indexName": "p2_status_date",
+                "isMultiKey": false,
+                "multiKeyPaths": {
+                  "status": [],
+                  "order_date": []
+                },
+                "isUnique": false,
+                "isSparse": false,
+                "isPartial": false,
+                "indexVersion": 2,
+                "direction": "forward",
+                "indexBounds": {
+                  "status": [
+                    "[\"مؤكد\", \"مؤكد\"]"
+                  ],
+                  "order_date": [
+                    "[MinKey, MaxKey]"
+                  ]
+                }
+              }
+            }
+          },
+          "rejectedPlans": []
+        },
+        "executionStats": {
+          "executionSuccess": true,
+          "nReturned": 100,
+          "executionTimeMillis": 26,
+          "totalKeysExamined": 100,
+          "totalDocsExamined": 100,
+          "executionStages": {
+            "isCached": false,
+            "stage": "LIMIT",
+            "nReturned": 100,
+            "executionTimeMillisEstimate": 25,
+            "works": 101,
+            "advanced": 100,
+            "needTime": 0,
+            "needYield": 0,
+            "saveState": 1,
+            "restoreState": 1,
+            "isEOF": 1,
+            "limitAmount": 100,
+            "inputStage": {
+              "stage": "FETCH",
+              "nReturned": 100,
+              "executionTimeMillisEstimate": 25,
+              "works": 100,
+              "advanced": 100,
+              "needTime": 0,
+              "needYield": 0,
+              "saveState": 1,
+              "restoreState": 1,
+              "isEOF": 0,
+              "nss": "bigdata_midterm.orders_validated",
+              "docsExamined": 100,
+              "alreadyHasObj": 0,
+              "inputStage": {
+                "stage": "IXSCAN",
+                "nReturned": 100,
+                "executionTimeMillisEstimate": 25,
+                "works": 100,
+                "advanced": 100,
+                "needTime": 0,
+                "needYield": 0,
+                "saveState": 1,
+                "restoreState": 1,
+                "isEOF": 0,
+                "nss": "bigdata_midterm.orders_validated",
+                "keyPattern": {
+                  "status": 1,
+                  "order_date": 1
+                },
+                "indexName": "p2_status_date",
+                "isMultiKey": false,
+                "multiKeyPaths": {
+                  "status": [],
+                  "order_date": []
+                },
+                "isUnique": false,
+                "isSparse": false,
+                "isPartial": false,
+                "indexVersion": 2,
+                "direction": "forward",
+                "indexBounds": {
+                  "status": [
+                    "[\"مؤكد\", \"مؤكد\"]"
+                  ],
+                  "order_date": [
+                    "[MinKey, MaxKey]"
+                  ]
+                },
+                "keysExamined": 100,
+                "seeks": 1,
+                "dupsTested": 0,
+                "dupsDropped": 0,
+                "peakTrackedMemBytes": 0
+              }
+            }
+          }
+        },
+        "queryShapeHash": "CA7E817AB05545E1FAE4E9456706B845A00CD54A8D959A6F601D0D459020D778",
+        "command": {
+          "find": "orders_validated",
+          "filter": {
+            "status": "مؤكد"
+          },
+          "sort": {
+            "order_date": 1
+          },
+          "limit": 100,
+          "hint": "p2_status_date",
+          "$db": "bigdata_midterm"
+        },
+        "serverInfo": {
+          "host": "DESKTOP-81FETUO",
+          "port": 27017,
+          "version": "8.3.8",
+          "gitVersion": "35e8c8a57f78157ed9fac1a9e90ee6c1818adab6"
+        },
+        "serverParameters": {
+          "internalQueryFacetBufferSizeBytes": 104857600,
+          "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+          "internalQueryMaxBlockingSortMemoryUsageBytes": 104857600,
+          "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+          "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+          "internalLookupStageIntermediateDocumentMaxSizeBytes": 104857600,
+          "internalQueryProhibitBlockingMergeOnMongoS": 0,
+          "internalQueryMaxAddToSetBytes": 104857600,
+          "internalQueryFrameworkControl": "trySbeRestricted",
+          "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+        },
+        "ok": 1.0
+      },
+      "reason": "Status equality followed by date range/sort"
+    }
+  ]
+}

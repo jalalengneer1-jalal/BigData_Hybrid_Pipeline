@@ -1,0 +1,1874 @@
+{
+  "generated_at": "2026-10-04T21:56:53.714910+00:00",
+  "reports": {
+    "sales_by_city": {
+      "name": "sales_by_city",
+      "description": "Order totals by city and currency (includes delivery)",
+      "as_of": "2026-10-04T21:56:50.550000",
+      "limit": 100,
+      "returned": 10,
+      "rows": [
+        {
+          "_id": {
+            "city": "عدن",
+            "currency": "YER"
+          },
+          "orders": 9236,
+          "revenue": "2450346500"
+        },
+        {
+          "_id": {
+            "city": "لحج",
+            "currency": "YER"
+          },
+          "orders": 9295,
+          "revenue": "2412232000"
+        },
+        {
+          "_id": {
+            "city": "الحديدة",
+            "currency": "YER"
+          },
+          "orders": 9158,
+          "revenue": "2389330000"
+        },
+        {
+          "_id": {
+            "city": "ذمار",
+            "currency": "YER"
+          },
+          "orders": 9302,
+          "revenue": "2374386000"
+        },
+        {
+          "_id": {
+            "city": "المكلا",
+            "currency": "YER"
+          },
+          "orders": 9106,
+          "revenue": "2369219500"
+        },
+        {
+          "_id": {
+            "city": "إب",
+            "currency": "YER"
+          },
+          "orders": 9035,
+          "revenue": "2355367500"
+        },
+        {
+          "_id": {
+            "city": "تعز",
+            "currency": "YER"
+          },
+          "orders": 9202,
+          "revenue": "2346702000"
+        },
+        {
+          "_id": {
+            "city": "عمران",
+            "currency": "YER"
+          },
+          "orders": 9049,
+          "revenue": "2338712000"
+        },
+        {
+          "_id": {
+            "city": "حجة",
+            "currency": "YER"
+          },
+          "orders": 9127,
+          "revenue": "2336773000"
+        },
+        {
+          "_id": {
+            "city": "صنعاء",
+            "currency": "YER"
+          },
+          "orders": 9189,
+          "revenue": "2316926500"
+        }
+      ]
+    },
+    "top_products": {
+      "name": "top_products",
+      "description": "Product revenue by SKU/name fallback and currency (excludes delivery)",
+      "as_of": "2026-10-04T21:56:50.550000",
+      "limit": 100,
+      "returned": 12,
+      "rows": [
+        {
+          "_id": {
+            "product_key": "sku:SKU-1010",
+            "currency": "YER"
+          },
+          "quantity": "59857",
+          "revenue": "13167674000"
+        },
+        {
+          "_id": {
+            "product_key": "sku:SKU-1007",
+            "currency": "YER"
+          },
+          "quantity": "61040",
+          "revenue": "6704029500"
+        },
+        {
+          "_id": {
+            "product_key": "sku:SKU-1005",
+            "currency": "YER"
+          },
+          "quantity": "61393",
+          "revenue": "1755155000"
+        },
+        {
+          "_id": {
+            "product_key": "sku:SKU-1008",
+            "currency": "YER"
+          },
+          "quantity": "61051",
+          "revenue": "611622000"
+        },
+        {
+          "_id": {
+            "product_key": "sku:SKU-1002",
+            "currency": "YER"
+          },
+          "quantity": "60860",
+          "revenue": "545527500"
+        },
+        {
+          "_id": {
+            "product_key": "sku:SKU-1009",
+            "currency": "YER"
+          },
+          "quantity": "61166",
+          "revenue": "488326000"
+        },
+        {
+          "_id": {
+            "product_key": "name:هاتف سامسونج a54",
+            "currency": "YER"
+          },
+          "quantity": "234",
+          "revenue": "51507000"
+        },
+        {
+          "_id": {
+            "product_key": "name:قرص ssd محمول",
+            "currency": "YER"
+          },
+          "quantity": "277",
+          "revenue": "31187000"
+        },
+        {
+          "_id": {
+            "product_key": "name:سماعات رأس",
+            "currency": "YER"
+          },
+          "quantity": "240",
+          "revenue": "6999500"
+        },
+        {
+          "_id": {
+            "product_key": "name:فأرة لاسلكية",
+            "currency": "YER"
+          },
+          "quantity": "273",
+          "revenue": "2557500"
+        },
+        {
+          "_id": {
+            "product_key": "name:محول hdmi",
+            "currency": "YER"
+          },
+          "quantity": "227",
+          "revenue": "2333500"
+        },
+        {
+          "_id": {
+            "product_key": "name:شاحن سريع",
+            "currency": "YER"
+          },
+          "quantity": "235",
+          "revenue": "1912500"
+        }
+      ]
+    },
+    "top_customers": {
+      "name": "top_customers",
+      "description": "Customer spending by currency",
+      "as_of": "2026-10-04T21:56:50.550000",
+      "limit": 100,
+      "returned": 100,
+      "rows": [
+        {
+          "_id": {
+            "customer_id": "عميل-62511",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1960000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-48555",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1958500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-90802",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1902500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-51776",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1853000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-86748",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1824500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-27714",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1821500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-72150",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1806000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-11730",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1805500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-72654",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1804000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-41167",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1798000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-73639",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1773500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-62794",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1762000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-10430",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1759500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-96727",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1759500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-52448",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1752500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-49330",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1750500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-2048",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1749000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-63504",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1740000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-27485",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1739000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-86761",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1726000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-15731",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1724000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-6467",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1714000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-6809",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1712000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-35065",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1706500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-34801",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1686500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-12769",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1686000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-54036",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1686000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-15912",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1673000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-54508",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1671000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-78746",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1670500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-70400",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1656500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-27042",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1652000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-7891",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1646500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-30918",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1646000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-44532",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1645000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-24170",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1643000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-75863",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1643000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-96895",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1643000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-82165",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1642000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-92397",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1641500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-19518",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1633000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-36247",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1633000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-63747",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1616000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-99326",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1616000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-30882",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1614000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-61540",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1610500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-74207",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1610000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-57817",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1609500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-97986",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1607000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-24746",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1605500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-59787",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1602000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-75746",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1596500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-17708",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1593500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-21846",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1585500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-61160",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1577000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-40259",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1575000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-82574",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1575000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-73238",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1573500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-57973",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1572500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-1602",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1571500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-69319",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1570500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-3236",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1570000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-13923",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1565000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-88940",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1562500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-54964",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1561500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-68866",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1559000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-78171",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1554500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-90972",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1554000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-38617",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1551500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-7111",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1551000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-14303",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1545500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-79292",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1545500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-39458",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1541000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-81132",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1539000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-19012",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1535000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-9409",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1533500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-43913",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1532000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-40928",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1528500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-43195",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1528500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-20225",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1526500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-38821",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1524500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-54737",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1524500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-53431",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1524000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-30599",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1523000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-75152",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1523000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-95480",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1523000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-75486",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1518000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-26032",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1517500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-728",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1517000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-80367",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1517000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-89679",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1517000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-7109",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1516000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-74494",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1514000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-34003",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1513000"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-11720",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1509500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-38542",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1509500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-6307",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1509500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-54872",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1507500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-76161",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1506500"
+        },
+        {
+          "_id": {
+            "customer_id": "عميل-95197",
+            "currency": "YER"
+          },
+          "orders": 1,
+          "revenue": "1506000"
+        }
+      ]
+    },
+    "sales_by_day": {
+      "name": "sales_by_day",
+      "description": "Daily order totals by currency (includes delivery)",
+      "as_of": "2026-10-04T21:56:50.550000",
+      "limit": 100,
+      "returned": 100,
+      "rows": [
+        {
+          "_id": {
+            "day": "2025-01-01",
+            "currency": "YER"
+          },
+          "orders": 449,
+          "revenue": "121520500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-02",
+            "currency": "YER"
+          },
+          "orders": 740,
+          "revenue": "180892500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-03",
+            "currency": "YER"
+          },
+          "orders": 785,
+          "revenue": "203518000"
+        },
+        {
+          "_id": {
+            "day": "2025-01-04",
+            "currency": "YER"
+          },
+          "orders": 776,
+          "revenue": "186728000"
+        },
+        {
+          "_id": {
+            "day": "2025-01-05",
+            "currency": "YER"
+          },
+          "orders": 773,
+          "revenue": "198890500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-06",
+            "currency": "YER"
+          },
+          "orders": 781,
+          "revenue": "206878000"
+        },
+        {
+          "_id": {
+            "day": "2025-01-07",
+            "currency": "YER"
+          },
+          "orders": 777,
+          "revenue": "192213000"
+        },
+        {
+          "_id": {
+            "day": "2025-01-08",
+            "currency": "YER"
+          },
+          "orders": 780,
+          "revenue": "197919500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-09",
+            "currency": "YER"
+          },
+          "orders": 819,
+          "revenue": "208990000"
+        },
+        {
+          "_id": {
+            "day": "2025-01-10",
+            "currency": "YER"
+          },
+          "orders": 751,
+          "revenue": "190072000"
+        },
+        {
+          "_id": {
+            "day": "2025-01-11",
+            "currency": "YER"
+          },
+          "orders": 742,
+          "revenue": "195719500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-12",
+            "currency": "YER"
+          },
+          "orders": 751,
+          "revenue": "197612500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-13",
+            "currency": "YER"
+          },
+          "orders": 807,
+          "revenue": "202690000"
+        },
+        {
+          "_id": {
+            "day": "2025-01-14",
+            "currency": "YER"
+          },
+          "orders": 846,
+          "revenue": "222937500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-15",
+            "currency": "YER"
+          },
+          "orders": 773,
+          "revenue": "210580000"
+        },
+        {
+          "_id": {
+            "day": "2025-01-16",
+            "currency": "YER"
+          },
+          "orders": 758,
+          "revenue": "202640500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-17",
+            "currency": "YER"
+          },
+          "orders": 767,
+          "revenue": "192656500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-18",
+            "currency": "YER"
+          },
+          "orders": 773,
+          "revenue": "192365000"
+        },
+        {
+          "_id": {
+            "day": "2025-01-19",
+            "currency": "YER"
+          },
+          "orders": 784,
+          "revenue": "198065500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-20",
+            "currency": "YER"
+          },
+          "orders": 755,
+          "revenue": "196520000"
+        },
+        {
+          "_id": {
+            "day": "2025-01-21",
+            "currency": "YER"
+          },
+          "orders": 767,
+          "revenue": "192359500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-22",
+            "currency": "YER"
+          },
+          "orders": 755,
+          "revenue": "200545500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-23",
+            "currency": "YER"
+          },
+          "orders": 774,
+          "revenue": "194414500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-24",
+            "currency": "YER"
+          },
+          "orders": 695,
+          "revenue": "182506000"
+        },
+        {
+          "_id": {
+            "day": "2025-01-25",
+            "currency": "YER"
+          },
+          "orders": 766,
+          "revenue": "203601500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-26",
+            "currency": "YER"
+          },
+          "orders": 756,
+          "revenue": "202170500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-27",
+            "currency": "YER"
+          },
+          "orders": 766,
+          "revenue": "206032000"
+        },
+        {
+          "_id": {
+            "day": "2025-01-28",
+            "currency": "YER"
+          },
+          "orders": 806,
+          "revenue": "205261500"
+        },
+        {
+          "_id": {
+            "day": "2025-01-29",
+            "currency": "YER"
+          },
+          "orders": 798,
+          "revenue": "199012000"
+        },
+        {
+          "_id": {
+            "day": "2025-01-30",
+            "currency": "YER"
+          },
+          "orders": 763,
+          "revenue": "195184000"
+        },
+        {
+          "_id": {
+            "day": "2025-01-31",
+            "currency": "YER"
+          },
+          "orders": 761,
+          "revenue": "191838000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-01",
+            "currency": "YER"
+          },
+          "orders": 767,
+          "revenue": "194368000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-02",
+            "currency": "YER"
+          },
+          "orders": 787,
+          "revenue": "210811000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-03",
+            "currency": "YER"
+          },
+          "orders": 784,
+          "revenue": "205558000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-04",
+            "currency": "YER"
+          },
+          "orders": 769,
+          "revenue": "185408500"
+        },
+        {
+          "_id": {
+            "day": "2025-02-05",
+            "currency": "YER"
+          },
+          "orders": 791,
+          "revenue": "201738500"
+        },
+        {
+          "_id": {
+            "day": "2025-02-06",
+            "currency": "YER"
+          },
+          "orders": 747,
+          "revenue": "191476500"
+        },
+        {
+          "_id": {
+            "day": "2025-02-07",
+            "currency": "YER"
+          },
+          "orders": 770,
+          "revenue": "205010500"
+        },
+        {
+          "_id": {
+            "day": "2025-02-08",
+            "currency": "YER"
+          },
+          "orders": 713,
+          "revenue": "187742000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-09",
+            "currency": "YER"
+          },
+          "orders": 738,
+          "revenue": "192789000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-10",
+            "currency": "YER"
+          },
+          "orders": 781,
+          "revenue": "205221000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-11",
+            "currency": "YER"
+          },
+          "orders": 733,
+          "revenue": "195170500"
+        },
+        {
+          "_id": {
+            "day": "2025-02-12",
+            "currency": "YER"
+          },
+          "orders": 763,
+          "revenue": "197768500"
+        },
+        {
+          "_id": {
+            "day": "2025-02-13",
+            "currency": "YER"
+          },
+          "orders": 740,
+          "revenue": "186142500"
+        },
+        {
+          "_id": {
+            "day": "2025-02-14",
+            "currency": "YER"
+          },
+          "orders": 814,
+          "revenue": "195524000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-15",
+            "currency": "YER"
+          },
+          "orders": 808,
+          "revenue": "203733500"
+        },
+        {
+          "_id": {
+            "day": "2025-02-16",
+            "currency": "YER"
+          },
+          "orders": 773,
+          "revenue": "199796500"
+        },
+        {
+          "_id": {
+            "day": "2025-02-17",
+            "currency": "YER"
+          },
+          "orders": 765,
+          "revenue": "205569000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-18",
+            "currency": "YER"
+          },
+          "orders": 825,
+          "revenue": "214321000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-19",
+            "currency": "YER"
+          },
+          "orders": 731,
+          "revenue": "178683000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-20",
+            "currency": "YER"
+          },
+          "orders": 806,
+          "revenue": "211521000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-21",
+            "currency": "YER"
+          },
+          "orders": 764,
+          "revenue": "199069000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-22",
+            "currency": "YER"
+          },
+          "orders": 748,
+          "revenue": "193515500"
+        },
+        {
+          "_id": {
+            "day": "2025-02-23",
+            "currency": "YER"
+          },
+          "orders": 756,
+          "revenue": "194877500"
+        },
+        {
+          "_id": {
+            "day": "2025-02-24",
+            "currency": "YER"
+          },
+          "orders": 749,
+          "revenue": "205368000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-25",
+            "currency": "YER"
+          },
+          "orders": 774,
+          "revenue": "193886500"
+        },
+        {
+          "_id": {
+            "day": "2025-02-26",
+            "currency": "YER"
+          },
+          "orders": 738,
+          "revenue": "203824000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-27",
+            "currency": "YER"
+          },
+          "orders": 741,
+          "revenue": "204238000"
+        },
+        {
+          "_id": {
+            "day": "2025-02-28",
+            "currency": "YER"
+          },
+          "orders": 768,
+          "revenue": "199779500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-01",
+            "currency": "YER"
+          },
+          "orders": 775,
+          "revenue": "190296000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-02",
+            "currency": "YER"
+          },
+          "orders": 785,
+          "revenue": "199889500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-03",
+            "currency": "YER"
+          },
+          "orders": 772,
+          "revenue": "215938500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-04",
+            "currency": "YER"
+          },
+          "orders": 768,
+          "revenue": "201223500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-05",
+            "currency": "YER"
+          },
+          "orders": 785,
+          "revenue": "207392500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-06",
+            "currency": "YER"
+          },
+          "orders": 754,
+          "revenue": "191099000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-07",
+            "currency": "YER"
+          },
+          "orders": 723,
+          "revenue": "186313500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-08",
+            "currency": "YER"
+          },
+          "orders": 774,
+          "revenue": "188900500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-09",
+            "currency": "YER"
+          },
+          "orders": 770,
+          "revenue": "185663000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-10",
+            "currency": "YER"
+          },
+          "orders": 768,
+          "revenue": "192294500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-11",
+            "currency": "YER"
+          },
+          "orders": 786,
+          "revenue": "198055000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-12",
+            "currency": "YER"
+          },
+          "orders": 736,
+          "revenue": "179656000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-13",
+            "currency": "YER"
+          },
+          "orders": 739,
+          "revenue": "198720500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-14",
+            "currency": "YER"
+          },
+          "orders": 736,
+          "revenue": "182935000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-15",
+            "currency": "YER"
+          },
+          "orders": 738,
+          "revenue": "209650000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-16",
+            "currency": "YER"
+          },
+          "orders": 775,
+          "revenue": "214423500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-17",
+            "currency": "YER"
+          },
+          "orders": 697,
+          "revenue": "185722000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-18",
+            "currency": "YER"
+          },
+          "orders": 756,
+          "revenue": "203095000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-19",
+            "currency": "YER"
+          },
+          "orders": 781,
+          "revenue": "203666500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-20",
+            "currency": "YER"
+          },
+          "orders": 780,
+          "revenue": "200447500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-21",
+            "currency": "YER"
+          },
+          "orders": 783,
+          "revenue": "206657000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-22",
+            "currency": "YER"
+          },
+          "orders": 746,
+          "revenue": "209302500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-23",
+            "currency": "YER"
+          },
+          "orders": 819,
+          "revenue": "207215000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-24",
+            "currency": "YER"
+          },
+          "orders": 680,
+          "revenue": "172345500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-25",
+            "currency": "YER"
+          },
+          "orders": 765,
+          "revenue": "202332000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-26",
+            "currency": "YER"
+          },
+          "orders": 735,
+          "revenue": "182906000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-27",
+            "currency": "YER"
+          },
+          "orders": 760,
+          "revenue": "195815000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-28",
+            "currency": "YER"
+          },
+          "orders": 791,
+          "revenue": "206493500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-29",
+            "currency": "YER"
+          },
+          "orders": 750,
+          "revenue": "195373500"
+        },
+        {
+          "_id": {
+            "day": "2025-03-30",
+            "currency": "YER"
+          },
+          "orders": 755,
+          "revenue": "188974000"
+        },
+        {
+          "_id": {
+            "day": "2025-03-31",
+            "currency": "YER"
+          },
+          "orders": 734,
+          "revenue": "186415500"
+        },
+        {
+          "_id": {
+            "day": "2025-04-01",
+            "currency": "YER"
+          },
+          "orders": 779,
+          "revenue": "204241000"
+        },
+        {
+          "_id": {
+            "day": "2025-04-02",
+            "currency": "YER"
+          },
+          "orders": 757,
+          "revenue": "189534500"
+        },
+        {
+          "_id": {
+            "day": "2025-04-03",
+            "currency": "YER"
+          },
+          "orders": 789,
+          "revenue": "207618000"
+        },
+        {
+          "_id": {
+            "day": "2025-04-04",
+            "currency": "YER"
+          },
+          "orders": 776,
+          "revenue": "187715000"
+        },
+        {
+          "_id": {
+            "day": "2025-04-05",
+            "currency": "YER"
+          },
+          "orders": 784,
+          "revenue": "203435000"
+        },
+        {
+          "_id": {
+            "day": "2025-04-06",
+            "currency": "YER"
+          },
+          "orders": 743,
+          "revenue": "191991500"
+        },
+        {
+          "_id": {
+            "day": "2025-04-07",
+            "currency": "YER"
+          },
+          "orders": 748,
+          "revenue": "201952500"
+        },
+        {
+          "_id": {
+            "day": "2025-04-08",
+            "currency": "YER"
+          },
+          "orders": 772,
+          "revenue": "199021000"
+        },
+        {
+          "_id": {
+            "day": "2025-04-09",
+            "currency": "YER"
+          },
+          "orders": 782,
+          "revenue": "203188000"
+        },
+        {
+          "_id": {
+            "day": "2025-04-10",
+            "currency": "YER"
+          },
+          "orders": 788,
+          "revenue": "190565000"
+        }
+      ]
+    },
+    "orders_by_status": {
+      "name": "orders_by_status",
+      "description": "Order counts and totals by status and currency",
+      "as_of": "2026-10-04T21:56:50.550000",
+      "limit": 100,
+      "returned": 6,
+      "rows": [
+        {
+          "_id": {
+            "status": "قيد الانتظار",
+            "currency": "YER"
+          },
+          "orders": 15238,
+          "revenue": "4002403500"
+        },
+        {
+          "_id": {
+            "status": "ملغي",
+            "currency": "YER"
+          },
+          "orders": 15407,
+          "revenue": "3983276000"
+        },
+        {
+          "_id": {
+            "status": "قيد الشحن",
+            "currency": "YER"
+          },
+          "orders": 15239,
+          "revenue": "3948301500"
+        },
+        {
+          "_id": {
+            "status": "مؤكد",
+            "currency": "YER"
+          },
+          "orders": 15322,
+          "revenue": "3930775000"
+        },
+        {
+          "_id": {
+            "status": "مرتجع",
+            "currency": "YER"
+          },
+          "orders": 15358,
+          "revenue": "3914652000"
+        },
+        {
+          "_id": {
+            "status": "تم التسليم",
+            "currency": "YER"
+          },
+          "orders": 15135,
+          "revenue": "3910587000"
+        }
+      ]
+    }
+  }
+}

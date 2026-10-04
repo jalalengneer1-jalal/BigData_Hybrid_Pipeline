@@ -1,0 +1,12 @@
+{
+  "verified_at": "2026-10-04T21:55:21.202343+00:00",
+  "database": "bigdata_midterm",
+  "source_orders": 91699,
+  "facts": 91699,
+  "daily_view_groups": 121,
+  "product_view_groups": 12,
+  "daily_orders_sum": 91699,
+  "consistency": "PASS",
+  "tests": "59 passed; 6 integration tests rechecked after batch optimization",
+  "midterm_source_files": "unchanged"
+}
